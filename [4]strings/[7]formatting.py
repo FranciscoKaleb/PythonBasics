@@ -1,5 +1,6 @@
 
-# string formatting
+# [1]string formatting
+print('-----------------[1]------------------')
 sentence = "The {} bird is quite big"
 sentence2 = "The {} pirate is {} tired"
 sentence3 = "That {1} {0} cat is {2} white"
@@ -11,7 +12,8 @@ print(sentence3.format('big','super','pure'))
 print(sentence4.format(a = 'active'))
 print(' ')
 
-# number formatting
+# [2]number formatting
+print('-----------------[2]------------------')
 result = 100/777
 name = "Jose"
 age = 20
@@ -19,6 +21,7 @@ age = 20
 print(result)
 print("The result was {r}".format(r = result))
 print(f'The result was {result}')
+# manipulating decimal point
 print("The result was {r:1.3f} inch".format(r = result))
 print("The result was {r:9.3f} inch".format(r = result))
 print(f'His name is {name}')

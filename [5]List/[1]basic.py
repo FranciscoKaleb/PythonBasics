@@ -1,6 +1,10 @@
-#Lists is like the all the c++ containers that can contain any data type
 
-#basics
+# Lists is like the all the c++ containers that can contain any data type
+# Lists is NOT immutable
+# able to contain any datatype unlike c++ which only allows specific data type for a container
+
+#[1] basics
+print('-----------------[1]------------------')
 myList = [1,2,13,4,15,6,7,7,8,9,0]
 myList2 = ['String', 100, 23.2]
 myList3 = ['one', 'two', 'three']
@@ -11,37 +15,47 @@ print(len(myList2)) # outputs 3
 print(myList3[0])
 print(myList[1:])
 
-#concatenating list
+#[2] concatenating list
+print('-----------------[2]------------------')
 myList5 = myList4 + myList3
 print(myList5) 
 
-#changing elements through direct element access
+#[3] changing elements through direct element access
+print('-----------------[3]------------------')
 myList3[0] = 'ONE'
 print(myList3)
 
-#adding elements in the end using append
+#[4] append() -- adding elements in the end using append
+print('-----------------[4]------------------')
 myList.append(4)
 print(myList)
 
-#removing items from the BACK of the list using pop
+#[5] pop() -- removing items from the BACK of the list using pop
+print('-----------------[5]------------------')
 myList.pop()
 print(myList)
 
-#saving popped items
+#[6] saving popped items
+print('-----------------[6]------------------')
 pop_list = myList.pop()
 pop_list = pop_list + myList.pop() # doesnt result into another list but rather an integer
 print(f'pop list = {pop_list}')
 print(myList)
 
-#removing items using pop(index)
+#[7] pop(index) -- removing items in any index using pop(index)
+print('-----------------[7]------------------')
 myList5.pop(1)
-print(myList5)
+print(f'myList5 -- > {myList5}')
+print(f'using pop(index) on myList5 {myList5}')
+print('note that seven is deleted/removed from myList5')
 
-#using sort method, has NO return type 
+#[8] sort() -- using sort method, has NO return type 
+print('-----------------[8]------------------')
 myList.sort()
 print(myList)
 
-#will not work because .sort() does not return a type 
+#[9] will not work because .sort() does not return a type 
+print('-----------------[9]------------------')
 newList = myList.sort()
 print(newList)
 print(f'type of newList is {type(newList)}')
@@ -49,10 +63,16 @@ print(f'type of newList is {type(newList)}')
 newList = myList
 print(newList)
 
-#reverse sort
+#[10] reverse() -- reverse sort
+print('-----------------[10]------------------')
 newList.reverse()
 print(newList)
 
+#[11] insert() 
+print('-----------------[11]------------------')
+print(myList)
+myList.insert(3,444)
+print(myList)
 
 
 
