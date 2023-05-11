@@ -1,3 +1,0 @@
-ming ming
-
-ming ming
