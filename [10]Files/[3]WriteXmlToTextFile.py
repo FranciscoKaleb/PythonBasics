@@ -12,7 +12,7 @@ with open("[10]Files/TextFiles/wiki.xml", 'r', encoding = 'utf-8') as fileobject
         if line_count%1000000 == 0:
             print(line_count)
         f.write(f"{line}")
-        if line_count == 10000:
+        if line_count == 100000:
             break
 f.close()
 

@@ -5,16 +5,22 @@
 myDict1 = {'key1':'value1','key2':'value2'}
 myDict2 = {'kaleb':26,'Sam':20}
 myDict3 = {'Apple':25,'Orange':15, 'Banana':10}
-myDict4 = {'k1': 23, 'k2':[1,2,3], 'k3':{'InsideKey':100}}
+myDict4 = {'k1': 23, 'k2':[1,2,3], 'k3':{'secondlayer':{'thirdlayer':100}}}
 myDict5 = {'key':['a', 'b', 'c']}
 
 print('-----------------[1]------------------')
 print(myDict2['kaleb']) #prints 26
 print(myDict3['Banana'])
+print(myDict4.keys())
 print(myDict4['k3'])
-print(myDict4['k3']['InsideKey'])
+print(myDict4['k3'])
+print(myDict4['k3']['secondlayer'])
+print(myDict4['k3']['secondlayer']['thirdlayer'])
 print(myDict5['key'][0].upper())
 print(myDict5)
+# adding new pair to a dictionary
+myDict1['key3'] = 'value3'
+print(myDict1['key3'])
 
 #[2]reassigning values
 print('-----------------[2]------------------')

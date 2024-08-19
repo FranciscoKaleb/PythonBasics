@@ -8,3 +8,4 @@ print(20/4)
 #modulo/ get the remainder
 print('-----------------[2]------------------')
 print(10%8)
+

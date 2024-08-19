@@ -44,6 +44,7 @@ print(add()) # prints 0
 #[7] Python Function With Arbitrary Arguments
 # factorial example 4x3x2x1
 print('-----------------[7]------------------')
+    # example 1
 def find_sum(*numbers):
     result = 0
 
@@ -52,6 +53,16 @@ def find_sum(*numbers):
     return result
 
 print(find_sum(1,77,89,56))
+    # example 2
+def concat_strings(*strings):
+    result = ''
+
+    for sub_s in strings:
+        result = result + sub_s + ' '
+    
+    return result
+
+print(concat_strings('Francisco', 'Kaleb', 'Marquez'))
 
 #[8] Recursion
 print('-----------------[8]------------------')
@@ -63,6 +74,11 @@ def factorial(x):
         return 1
     else:
         return (x * factorial(x-1))
+    # lets say its a factorial of 4, the result is like
+    #  1st 4 * 
+    #  2nd 3 *
+    #  3rd 2 *
+    #  4th 1
 
 num = 3
 print("The factorial of", num, "is", factorial(num))
@@ -166,7 +182,7 @@ def check_guess(mixedup_list, guess):
 # shuffle test
 mixedup_list = shuffle_list(myList)
 
-# user guess
+# user guess loop, will repeat if input is incorrect
 guess = player_guess()
 
 # check guess

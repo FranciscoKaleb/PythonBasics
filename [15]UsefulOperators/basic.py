@@ -49,7 +49,7 @@ myList1 = [1,2,3,4]
 myList2 = ['a','b','c','d','e']
 
 for mem in zip(myList1, myList2):
-    print(mem) #combine the two list into a tuple
+    print(mem) #combine the two list into a tuple pair
 
 #[5] in keyword
 print('-----------------[7]------------------')
@@ -71,7 +71,7 @@ print(str1.split())
 print('-----------------[9]------------------')
 myListOfNum = [11,12, 13,14,5,66,3,12,12,12,12]
 print(max(myListOfNum))
-
+ 
 #[8] randint(min, max) - directly manipulate passed list. Not returning anything - no return type
 print('-----------------[10]------------------')
 from random import randint
@@ -81,8 +81,8 @@ print('-----------------[12]------------------')
 print(f'the list has {myListOfNum.count(12)} number 12')
 #[10] shuffle()
 print('-----------------[12]------------------')
-from random import shuffle
-shuffle(myListOfNum)
+from random import shuffle as s
+s(myListOfNum)
 print(myListOfNum)
 #[11] input , cin equivalent in c++
 result = input("Enter a number here:")

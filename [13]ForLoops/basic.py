@@ -50,8 +50,8 @@ for (a,b) in myTupleList:
 #[7] dictionary, printing values/keys in a key value pair
 print('-----------------[7]------------------')
 myD = {'k1':'P001', 'k2':'P002', 'k3':'P003'}
-for mem in myD.values(): # or myD.keys()
-    print(mem)
+for mem in myD.keys(): # or myD.values()
+    print(f'{mem} : {myD[mem]}')
 
 
 

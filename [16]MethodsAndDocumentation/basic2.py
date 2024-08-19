@@ -21,6 +21,7 @@ def mufunc2(**kwargs):
     else:
         print('I did not find any fruit here')
 
+# fruit is key, dorian is value, its a key value pair, a dictionary
 mufunc2(fruit = 'Dorian')
 
 #[16] using *args and **kwargs at the same time
@@ -190,7 +191,7 @@ def primeNumber(max):
 
 
 
-print(primeNumber(97))
+print(primeNumber(3))
 print(primeNumber(1000)) # takes less than a second to calculate
 #print(primeNumber(10000)) # takes like 3 seconds to calculate
 #print(primeNumber(100000)) # it takes like 3 minutes to calculate this

@@ -8,7 +8,7 @@ def greet(str):
 
 print(greet('kaleb'))
 
-# print(name) , would cause error because we are trying to access a variable in a function
+# print(name) , would cause error because we are trying to access a variable inside a function
 print(dummy_name)
 
 #[2]
@@ -21,7 +21,7 @@ accessVariableOutside()
 #[3] reassigning value to a variable outside the function TURNS the variable local
 print('-----------------[3]------------------')
 def modifyVariableOutside():
-    dummy_name = 'Curry' # the variable dummy_name is different from the outside dummy_name
+    dummy_name = 'Curry' # the variable dummy_name is different from the global dummy_name
     print(dummy_name)
 
 modifyVariableOutside()
@@ -33,7 +33,7 @@ def modifyVariableOutside():
     print(dummy_name)
     dummy_name = 'Curry'
 
-# modifyVariableOutside() would cause error
+# modifyVariableOutside() would cause error because compiler would be confused
 
 #[5] SOLUTION to number 4
 print('-----------------[5]------------------')

@@ -15,6 +15,10 @@ for mem in myString:
 
 print(myList2)
 
+#another method through conversion using list()
+new_list = list(myString)
+print(new_list)
+
 #[3] list comprehension
 print('-----------------[3]------------------')
 myList3 = [x for x in 'Czarina']
